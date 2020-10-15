@@ -9,7 +9,10 @@ The CSS and HTML files are provided in this repo, you could use it to create the
 You should be creating this application in narwal/nx workspace.
 
 Styles sheet has to be written with SASS.
-Create a social media application with following features.
+
+Features you would be implementing are below, 
+
+Note: Refer the diagram above for understanding the below features.
 
 The contacts and search should be a re-usable component / shared component.
 
@@ -26,19 +29,26 @@ and so on ... (Using angular feature Routing)
 
 I should be able to search the contacts in contacts component.
 
-When messenger application in loaded in application container after clicking messenger link in home page, we should reuse the contacts component to the left side.
+When messenger application in loaded in application container after clicking messenger link in home page, we should reuse the contacts component on the left side sectiion.
 
 ![Alt text](assets/guide-messenger.jpg?raw=true "When messenger module is loaded")
 
-For remaining application load, just load a place holder module, saying “market places is loaded”.
+For remaining applications, just load a place holder module, saying “market places is loaded” and so on....
 
-The contacts and application names and its urls should come from backend service.
+The contacts and application names and its Urls should come from backend service.
+
+for e.g. http://localhost:8080/api/apps
+http://localhost:8080/api/contacts
+
+load all post for the user in the center section of socisl media app from api http://localhost:8080/api/posts [GET]
 
 Adding a post should persist the post to the backend with an API call.
 
+for e.g. http://localhost:8080/api/posts [POST]
+
 The application state should be managed with NgRx.
 
-Split the components correctly with your ideas.
+Split the components diligently.
 
 Note: I know that we have not covered the unit testing and localstorage, we are planing to have a seperate session for that, you may do extend your POC with those knwoledge once we covered those topics at later state.
 
